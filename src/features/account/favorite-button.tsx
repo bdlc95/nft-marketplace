@@ -1,7 +1,7 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { useNavigate } from '@tanstack/react-router'
+import { Heart } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { FigmaIcon } from '@/components/figma-icon'
 import { accountApi } from '@/services/commerce'
 import { errorMessage } from '@/services/http'
 import { getIdentity, useIdentity } from '@/lib/session'
@@ -70,7 +70,7 @@ export function FavoriteButton({
           mutation.mutate(!active)
         }}
       >
-        <FigmaIcon name="dd-imgHeart1" />
+        <Heart aria-hidden="true" fill={active ? 'currentColor' : 'none'} />
         {!compact && <span>{active ? 'Salvo' : 'Favoritar'}</span>}
       </Button>
       {mutation.isError && (

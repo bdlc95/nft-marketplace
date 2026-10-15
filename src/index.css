@@ -1252,7 +1252,7 @@ a {
     display: grid;
     grid-template-columns: minmax(0, 1fr) min(33vw, 138px);
     gap: 12px;
-    padding: 8px 16px 26px;
+    padding: 20px 20px 34px;
     border-radius: 32px;
     overflow: hidden;
   }
@@ -1822,12 +1822,24 @@ a {
     font-size: 16px;
   }
   .purchase-buttons > button.add-to-cart {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background: #2f1d15;
     border: 1px solid #3f2319;
     padding: 0;
+  }
+  .purchase-buttons > button.add-to-cart > .mobile-only {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .purchase-buttons > button.add-to-cart .figma-icon {
+    width: 20px;
+    height: 20px;
   }
   .detail-share {
     display: none;
@@ -2140,9 +2152,9 @@ a {
 .favorite-button[aria-pressed='true'] {
   background: #55321f;
 }
-.favorite-button[aria-pressed='true']::after {
-  content: '✓';
-  color: var(--text-accent);
+.favorite-button > svg {
+  width: 20px;
+  height: 20px;
 }
 .favorite-compact {
   display: inline-flex;

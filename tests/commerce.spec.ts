@@ -139,6 +139,40 @@ test('galeria mobile do detalhe segue o frame sem indicadores de carrossel', asy
   await expect(page.locator('.mobile-gallery-dots')).toHaveCount(0)
 })
 
+test('hero mobile mantém boas-vindas dentro do card e carrinho centralizado', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 })
+  await page.goto('/')
+  const hero = page.locator('.catalog-hero')
+  const welcome = page.locator('.hero-welcome')
+  const heroBox = await hero.boundingBox()
+  const welcomeBox = await welcome.boundingBox()
+  expect(heroBox).not.toBeNull()
+  expect(welcomeBox).not.toBeNull()
+  expect(welcomeBox!.y).toBeGreaterThanOrEqual(heroBox!.y + 16)
+
+  await page.goto('/nfts/nft-01')
+  const addToCart = page.getByRole('button', {
+    name: 'Adicionar ao carrinho',
+    exact: true,
+  })
+  const buttonBox = await addToCart.boundingBox()
+  const iconBox = await addToCart.locator('img').boundingBox()
+  expect(buttonBox).not.toBeNull()
+  expect(iconBox).not.toBeNull()
+  expect(
+    Math.abs(
+      buttonBox!.x + buttonBox!.width / 2 - (iconBox!.x + iconBox!.width / 2),
+    ),
+  ).toBeLessThanOrEqual(1)
+  expect(
+    Math.abs(
+      buttonBox!.y + buttonBox!.height / 2 - (iconBox!.y + iconBox!.height / 2),
+    ),
+  ).toBeLessThanOrEqual(1)
+})
+
 test('login mobile permite rolar até o acesso social', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 })
   await page.goto('/login')
@@ -165,9 +199,19 @@ test('favorito persiste e rollback após falha não altera dados', async ({
 }) => {
   await login(page)
   await page.goto('/nfts/nft-01')
+  await expect(
+    page
+      .getByRole('button', { name: 'Salvar nos favoritos', exact: true })
+      .locator('svg'),
+  ).toHaveAttribute('fill', 'none')
   await page
     .getByRole('button', { name: 'Salvar nos favoritos', exact: true })
     .click()
+  await expect(
+    page
+      .getByRole('button', { name: 'Remover dos favoritos', exact: true })
+      .locator('svg'),
+  ).toHaveAttribute('fill', 'currentColor')
   await expect(
     page.getByRole('button', { name: 'Remover dos favoritos', exact: true }),
   ).toHaveAttribute('aria-pressed', 'true')
@@ -175,6 +219,11 @@ test('favorito persiste e rollback após falha não altera dados', async ({
     page.getByRole('button', { name: 'Remover dos favoritos', exact: true }),
   ).toBeEnabled()
   await page.reload()
+  await expect(
+    page
+      .getByRole('button', { name: 'Remover dos favoritos', exact: true })
+      .locator('svg'),
+  ).toHaveAttribute('fill', 'currentColor')
   await expect(
     page.getByRole('button', { name: 'Remover dos favoritos', exact: true }),
   ).toHaveAttribute('aria-pressed', 'true')
