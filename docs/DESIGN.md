@@ -46,6 +46,7 @@ Os wrappers preservam o recorte dos assets. A imagem principal é a exportação
 - Confirmar compra abre uma revisão acessível antes do POST, exigida pelo enunciado; a API revalida os dados. Pending/rejected e recuperação de falhas têm feedback próprio, embora esses estados não tenham frames no PDF.
 - Perfil, carteiras e confirmação mobile são adaptações dos frames desktop, pois o PDF não inclui suas versões mobile. O layout continua utilizável nessas larguras.
 - O detalhe mobile mantém uma única imagem principal, sem indicadores de carrossel; o arquivo de arte ocupa e centraliza todo o frame. Os cartões do carrinho reorganizam produto, quantidade e remoção em linhas próprias para evitar sobreposição e overflow. Login e cadastro mobile rolam dentro da página de autenticação, mantendo os botões sociais alcançáveis em telas baixas.
+- Os slides do hero mobile usam as artes em resolução original, em vez de miniaturas pequenas ampliadas, para preservar a nitidez em telas de alta densidade.
 - Referência de transação, conexão de carteira, pagamento e login social são simulados. Conteúdo editorial fora do escopo e recuperação de senha mostram feedback de indisponibilidade após interação.
 
 Capturas e inspeção do código em 1440 e 414 pixels ficam em `validation/pdf-match`. Há comparação manual com os frames; não se afirma igualdade pixel a pixel. As oito baselines Playwright representam o código verificado e detectam regressões, sem substituir essa comparação.

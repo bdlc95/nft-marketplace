@@ -65,15 +65,38 @@ test('combina filtros, ordena na API e reinicia a página', async ({ page }) => 
 })
 
 test('os indicadores do hero trocam a imagem em destaque', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 })
   await page.goto('/')
-  const dots = page.locator(
-    '.hero-dots:visible button, .hero-mobile-dots:visible button',
-  )
-  const image = page.locator('.hero-art img:visible').first()
+  const dots = page.locator('.hero-mobile-dots button')
+  const image = page.locator('.mobile-hero-primary')
   await expect(image).toHaveAttribute('alt', /Emerald Ape/)
+  await expect
+    .poll(() =>
+      image.evaluate((element: HTMLImageElement) => element.naturalWidth),
+    )
+    .toBeGreaterThanOrEqual(250)
+  const secondaryImage = page.locator('.mobile-hero-secondary')
+  await expect(secondaryImage).toHaveAttribute('src', /sage\.png$/)
+  await expect
+    .poll(() =>
+      secondaryImage.evaluate((element: HTMLImageElement) => element.naturalWidth),
+    )
+    .toBeGreaterThanOrEqual(250)
   await dots.nth(1).click()
   await expect(dots.nth(1)).toHaveAttribute('aria-current', 'true')
   await expect(image).toHaveAttribute('alt', /Sage Nomad/)
+  await expect
+    .poll(() =>
+      image.evaluate((element: HTMLImageElement) => element.naturalWidth),
+    )
+    .toBeGreaterThanOrEqual(250)
+  await dots.nth(2).click()
+  await expect(image).toHaveAttribute('alt', /Ivory Baron/)
+  await expect
+    .poll(() =>
+      image.evaluate((element: HTMLImageElement) => element.naturalWidth),
+    )
+    .toBeGreaterThanOrEqual(250)
 })
 
 test('login mantém os botões sociais acessíveis em uma janela baixa', async ({

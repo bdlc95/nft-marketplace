@@ -6,19 +6,25 @@ const heroSlides = [
   {
     title: 'Emerald Ape',
     image: '/assets/figma/hero.png',
-    mobileImage: '/assets/figma/mobile-hero-emerald.png',
+    mobileImage: '/assets/figma/hero.png',
+    mobileWidth: 450,
+    mobileHeight: 450,
     alt: 'Emerald Ape usando óculos escuros e jaqueta verde',
   },
   {
     title: 'Sage Nomad',
     image: '/assets/figma/sage.png',
-    mobileImage: '/assets/figma/mobile-hero-sage.png',
+    mobileImage: '/assets/figma/sage.png',
+    mobileWidth: 250,
+    mobileHeight: 250,
     alt: 'Sage Nomad, arte digital da Kurio',
   },
   {
     title: 'Ivory Baron',
     image: '/assets/figma/ivory.png',
     mobileImage: '/assets/figma/mobile-hero.png',
+    mobileWidth: 361,
+    mobileHeight: 356,
     alt: 'Ivory Baron, arte digital da Kurio',
   },
 ]
@@ -97,17 +103,17 @@ export function CatalogHero({
         <img
           className="mobile-only mobile-hero-primary"
           src={slide.mobileImage}
-          width={138}
-          height={138}
+          width={slide.mobileWidth}
+          height={slide.mobileHeight}
           alt={`${slide.title}, NFT em destaque`}
           fetchPriority="high"
         />
         {activeSlide === 0 && (
           <img
             className="mobile-only mobile-hero-secondary"
-            src="/assets/figma/mobile-hero-sage.png"
-            width={58}
-            height={58}
+            src="/assets/figma/sage.png"
+            width={250}
+            height={250}
             alt="Sage Nomad"
           />
         )}
