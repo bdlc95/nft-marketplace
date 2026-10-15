@@ -142,16 +142,29 @@ test('galeria mobile do detalhe segue o frame sem indicadores de carrossel', asy
 test('hero mobile mantém boas-vindas dentro do card e carrinho centralizado', async ({
   page,
 }) => {
-  await page.setViewportSize({ width: 390, height: 844 })
   await page.goto('/')
-  const hero = page.locator('.catalog-hero')
-  const welcome = page.locator('.hero-welcome')
-  const heroBox = await hero.boundingBox()
-  const welcomeBox = await welcome.boundingBox()
-  expect(heroBox).not.toBeNull()
-  expect(welcomeBox).not.toBeNull()
-  expect(welcomeBox!.y).toBeGreaterThanOrEqual(heroBox!.y + 16)
+  for (const width of [390, 414]) {
+    await page.setViewportSize({ width, height: 844 })
+    const heroBox = await page.locator('.catalog-hero').boundingBox()
+    const welcomeBox = await page.locator('.hero-welcome').boundingBox()
+    const copyBox = await page.locator('.hero-copy').boundingBox()
+    const artBox = await page.locator('.hero-art').boundingBox()
+    expect(heroBox).not.toBeNull()
+    expect(welcomeBox).not.toBeNull()
+    expect(copyBox).not.toBeNull()
+    expect(artBox).not.toBeNull()
+    expect(heroBox!.width).toBeLessThanOrEqual(302)
+    expect(heroBox!.width / heroBox!.height).toBeGreaterThanOrEqual(1.45)
+    expect(welcomeBox!.y).toBeGreaterThanOrEqual(heroBox!.y + 10)
+    expect(copyBox!.y + copyBox!.height).toBeLessThanOrEqual(
+      heroBox!.y + heroBox!.height,
+    )
+    expect(artBox!.x + artBox!.width).toBeLessThanOrEqual(
+      heroBox!.x + heroBox!.width,
+    )
+  }
 
+  await page.setViewportSize({ width: 390, height: 844 })
   await page.goto('/nfts/nft-01')
   const addToCart = page.getByRole('button', {
     name: 'Adicionar ao carrinho',
