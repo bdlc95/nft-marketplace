@@ -2,6 +2,8 @@
 
 Implementação do desafio frontend em React e TypeScript. Inclui descoberta, detalhe, autenticação, favoritos, carrinho, checkout, acompanhamento do pedido, recibo, perfil e carteiras. Pagamentos, carteiras e backend são simulados; não há transação real em blockchain.
 
+**Demonstração:** https://nft-marketplace-fawn-chi.vercel.app
+
 ## Executar
 
 Use Node >=22.12, preferencialmente Node 24 LTS. Extraia o pacote em uma pasta nova e abra `nft-marketplace` no VS Code.
