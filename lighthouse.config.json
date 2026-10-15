@@ -1,0 +1,10 @@
+{
+  "origin": "http://127.0.0.1:4173",
+  "pages": [
+    "/",
+    "/nfts/nft-01"
+  ],
+  "runs": 3,
+  "scenario": "standard",
+  "notes": "Build de produ\u00e7\u00e3o, mocks ativos, fontes e assets locais; 3 medi\u00e7\u00f5es de home/detalhe em desktop/mobile. Nenhum recurso desativado."
+}

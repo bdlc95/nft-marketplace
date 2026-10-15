@@ -1,0 +1,4 @@
+{
+  "rewrites": [{ "source": "/((?!api/|assets/|mockServiceWorker.js).*)", "destination": "/index.html" }],
+  "headers": [{ "source": "/mockServiceWorker.js", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] }]
+}

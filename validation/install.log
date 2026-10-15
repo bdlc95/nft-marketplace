@@ -1,0 +1,64 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+> nft-marketplace-challenge@1.0.0 prepare
+> msw init public --save
+
+Copying the worker script at "/workspace/scratch/c24001a1e050/install-proof/public"...
+
+Worker script successfully copied!
+  - public
+
+Continue by describing the network in your application:
+
+
+https://mswjs.io/docs/quick-start
+
+
+added 500 packages in 6s
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> nft-marketplace-challenge@1.0.0 build
+> npm run typecheck && vite build
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> nft-marketplace-challenge@1.0.0 typecheck
+> tsc --noEmit
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 2125 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                            1.11 kB │ gzip:   0.63 kB
+dist/assets/roboto-mono-latin-400-normal-GekRknry.woff2   12.68 kB
+dist/assets/roboto-mono-latin-700-normal-foxDnrFi.woff2   12.70 kB
+dist/assets/roboto-mono-latin-500-normal-pxIOXZmA.woff2   12.94 kB
+dist/assets/roboto-mono-latin-400-normal-DBZPkcnn.woff    15.72 kB
+dist/assets/roboto-mono-latin-700-normal-CHYrj1DZ.woff    15.85 kB
+dist/assets/roboto-mono-latin-500-normal-D6j6AMzd.woff    15.93 kB
+dist/assets/index-C7QmCIn_.css                            57.56 kB │ gzip:  11.78 kB
+dist/assets/checkout-state-C6ZnkdXQ.js                     0.43 kB │ gzip:   0.22 kB
+dist/assets/form-errors-DYYMoTlW.js                        0.53 kB │ gzip:   0.35 kB
+dist/assets/cart-hooks-BnCiCt67.js                         0.71 kB │ gzip:   0.44 kB
+dist/assets/favorites-page-Bk393vnv.js                     0.91 kB │ gzip:   0.49 kB
+dist/assets/account-layout-CW-ZPRF9.js                     1.26 kB │ gzip:   0.63 kB
+dist/assets/favorite-button-DiELBNpN.js                    1.34 kB │ gzip:   0.70 kB
+dist/assets/index-D0_MMu6w.js                              2.63 kB │ gzip:   1.32 kB
+dist/assets/wallets-page-BKX221mO.js                       2.95 kB │ gzip:   1.32 kB
+dist/assets/auth-page-cieXXw4K.js                          3.31 kB │ gzip:   1.46 kB
+dist/assets/profile-page-D8ta7Z2c.js                       3.46 kB │ gzip:   1.58 kB
+dist/assets/order-page-DaIhogZW.js                         3.92 kB │ gzip:   1.68 kB
+dist/assets/cart-page-Dadv0N0y.js                          4.95 kB │ gzip:   1.76 kB
+dist/assets/checkout-page-CG_LJqcn.js                      8.60 kB │ gzip:   3.25 kB
+dist/assets/index-n_9YRD6R.js                             12.15 kB │ gzip:   4.62 kB
+dist/assets/detail-page-CAAYtYkC.js                       15.67 kB │ gzip:   5.75 kB
+dist/assets/browser-DNfPjgfG.js                          299.61 kB │ gzip:  95.90 kB
+dist/assets/render-D--l0iUm.js                           549.21 kB │ gzip: 178.71 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 3.55s

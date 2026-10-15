@@ -1,0 +1,382 @@
+[
+  {
+    "width": 1440,
+    "route": "/login",
+    "errors": [],
+    "size": {
+      "width": 1440,
+      "content": 1440
+    },
+    "texts": "Ir para o conteúdo\nKURIO\nInício\nMercado\nCriadores\nAprenda\n0\nEntrar\nTempo real: conectado\n\nBem-vindo à Kurio\n\nSEJA DONO DO FUTURO\nDA ARTE DIGITAL\n\nDescubra NFTs selecionados de criadores do mundo todo e colecione arte digital verificada.\n\nEXPLORAR\nColeções\nArte digital\n(6)\nFotografia\n(6)\nMúsica\n(6)\nArte 3D\n(3)\nColecionáveis\n(3)\nGenerativa\n(3)\nJogos\n(3)\nAssinaturas\n(3)\nUtilidade\n(3)\nFaixa de preço\n\nPreço: 0,02 - 12,30 ETH\n\nAplicar\nRede\nEthereum\n(12)\nPolygon\n(12)\nSolana\n(12)\nTodos os NFTs\nNovos lançamentos\nEm alta\nOrdenar por:\nListados recentemente\nMenor preço\nMaior preço\nNome\n\n36 NFTs encontrados\n\nEmerald Ape #042\n\n1.19 ETH\n\nSage Nomad #009\n\n1.69 ETH\n\nNeon Vessel #552\n\n1.99 ETH\n\nCosmic Bloom #118\n\n1.29 ETH\n\nViolet Nomad #314\n\n1.39 ETH\n\nIvory Baron #088\n\n1.79 ETH\n\nGolden Beat #207\n\n0.99 ETH\n\nGolden Frequency #071\n\n0.59 ETH\n\nGolden Signal #160\n\n0.39 ETH\n\n×\nEntrar\n|\nCriar conta\n\nEntre para gerenciar sua carteira, coleção e perfil de criador.\n\nE-mail\nSenha\nEsqueceu a senha?\nEntrar\nOu continue com\nContinuar com Google\nContinuar com Facebook",
+    "fields": [
+      {
+        "name": "",
+        "placeholder": "Explorar coleções",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      {
+        "name": "email",
+        "placeholder": "contato@email.com",
+        "rect": {
+          "x": 549,
+          "y": 323,
+          "width": 342,
+          "height": 42,
+          "top": 323,
+          "right": 891,
+          "bottom": 365,
+          "left": 549
+        }
+      },
+      {
+        "name": "password",
+        "placeholder": "***********",
+        "rect": {
+          "x": 549,
+          "y": 375,
+          "width": 342,
+          "height": 42,
+          "top": 375,
+          "right": 891,
+          "bottom": 417,
+          "left": 549
+        }
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/signup",
+    "errors": [],
+    "size": {
+      "width": 1440,
+      "content": 1440
+    },
+    "texts": "Ir para o conteúdo\nKURIO\nInício\nMercado\nCriadores\nAprenda\n0\nEntrar\nTempo real: conectado\n\nBem-vindo à Kurio\n\nSEJA DONO DO FUTURO\nDA ARTE DIGITAL\n\nDescubra NFTs selecionados de criadores do mundo todo e colecione arte digital verificada.\n\nEXPLORAR\nColeções\nArte digital\n(6)\nFotografia\n(6)\nMúsica\n(6)\nArte 3D\n(3)\nColecionáveis\n(3)\nGenerativa\n(3)\nJogos\n(3)\nAssinaturas\n(3)\nUtilidade\n(3)\nFaixa de preço\n\nPreço: 0,02 - 12,30 ETH\n\nAplicar\nRede\nEthereum\n(12)\nPolygon\n(12)\nSolana\n(12)\nTodos os NFTs\nNovos lançamentos\nEm alta\nOrdenar por:\nListados recentemente\nMenor preço\nMaior preço\nNome\n\n36 NFTs encontrados\n\nEmerald Ape #042\n\n1.19 ETH\n\nSage Nomad #009\n\n1.69 ETH\n\nNeon Vessel #552\n\n1.99 ETH\n\nCosmic Bloom #118\n\n1.29 ETH\n\nViolet Nomad #314\n\n1.39 ETH\n\nIvory Baron #088\n\n1.79 ETH\n\nGolden Beat #207\n\n0.99 ETH\n\nGolden Frequency #071\n\n0.59 ETH\n\nGolden Signal #160\n\n0.39 ETH\n\n×\nEntrar\n|\nCriar conta\n\nCrie seu perfil de colecionador e conecte uma carteira quando quiser.\n\nNome de usuário\nE-mail\nSenha\nConfirmar senha\nCriar conta\nOu continue com\nContinuar com Google\nContinuar com Facebook",
+    "fields": [
+      {
+        "name": "",
+        "placeholder": "Explorar coleções",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      {
+        "name": "name",
+        "placeholder": "Nome de usuário",
+        "rect": {
+          "x": 549,
+          "y": 319,
+          "width": 342,
+          "height": 42,
+          "top": 319,
+          "right": 891,
+          "bottom": 361,
+          "left": 549
+        }
+      },
+      {
+        "name": "email",
+        "placeholder": "Digite seu e-mail",
+        "rect": {
+          "x": 549,
+          "y": 371,
+          "width": 342,
+          "height": 42,
+          "top": 371,
+          "right": 891,
+          "bottom": 413,
+          "left": 549
+        }
+      },
+      {
+        "name": "password",
+        "placeholder": "Senha",
+        "rect": {
+          "x": 549,
+          "y": 423,
+          "width": 342,
+          "height": 42,
+          "top": 423,
+          "right": 891,
+          "bottom": 465,
+          "left": 549
+        }
+      },
+      {
+        "name": "confirmPassword",
+        "placeholder": "Confirmar senha",
+        "rect": {
+          "x": 549,
+          "y": 475,
+          "width": 342,
+          "height": 42,
+          "top": 475,
+          "right": 891,
+          "bottom": 517,
+          "left": 549
+        }
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/profile",
+    "errors": [],
+    "size": {
+      "width": 1440,
+      "content": 1440
+    }
+  },
+  {
+    "width": 1440,
+    "route": "/wallets",
+    "errors": [],
+    "size": {
+      "width": 1440,
+      "content": 1440
+    }
+  },
+  {
+    "width": 1440,
+    "route": "/",
+    "errors": [],
+    "size": {
+      "width": 1440,
+      "content": 1440
+    }
+  },
+  {
+    "width": 1440,
+    "route": "/cart",
+    "errors": [],
+    "size": {
+      "width": 1440,
+      "content": 1440
+    }
+  },
+  {
+    "width": 1440,
+    "route": "/checkout",
+    "errors": [],
+    "size": {
+      "width": 1440,
+      "content": 1440
+    }
+  },
+  {
+    "width": 1440,
+    "route": "/orders/:id",
+    "errors": [],
+    "size": {
+      "width": 1440,
+      "content": 1440
+    }
+  },
+  {
+    "width": 414,
+    "route": "/login",
+    "errors": [],
+    "size": {
+      "width": 414,
+      "content": 414
+    },
+    "texts": "Ir para o conteúdo\nTempo real: conectado\nKURIO\nEntrar\nE-mail\nSenha\nEsqueceu a senha?\nEntrar\nOu continue com\nContinuar com Google\nContinuar com Facebook\n\nNovo na Kurio? Crie uma conta",
+    "fields": [
+      {
+        "name": "",
+        "placeholder": "Explorar coleções",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      {
+        "name": "email",
+        "placeholder": "contato@email.com",
+        "rect": {
+          "x": 27,
+          "y": 312,
+          "width": 360,
+          "height": 52,
+          "top": 312,
+          "right": 387,
+          "bottom": 364,
+          "left": 27
+        }
+      },
+      {
+        "name": "password",
+        "placeholder": "***********",
+        "rect": {
+          "x": 27,
+          "y": 374,
+          "width": 360,
+          "height": 52,
+          "top": 374,
+          "right": 387,
+          "bottom": 426,
+          "left": 27
+        }
+      }
+    ]
+  },
+  {
+    "width": 414,
+    "route": "/signup",
+    "errors": [],
+    "size": {
+      "width": 414,
+      "content": 414
+    },
+    "texts": "Ir para o conteúdo\nTempo real: conectado\nKURIO\nCriar perfil de colecionador\nNome de usuário\nE-mail\nSenha\nConfirmar senha\nCriar perfil\nOu continue com\nContinuar com Google\nContinuar com Facebook\n\nJá tem uma conta? Entre",
+    "fields": [
+      {
+        "name": "",
+        "placeholder": "Explorar coleções",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      {
+        "name": "name",
+        "placeholder": "Nome de usuário",
+        "rect": {
+          "x": 27,
+          "y": 312,
+          "width": 360,
+          "height": 52,
+          "top": 312,
+          "right": 387,
+          "bottom": 364,
+          "left": 27
+        }
+      },
+      {
+        "name": "email",
+        "placeholder": "Digite seu e-mail",
+        "rect": {
+          "x": 27,
+          "y": 374,
+          "width": 360,
+          "height": 52,
+          "top": 374,
+          "right": 387,
+          "bottom": 426,
+          "left": 27
+        }
+      },
+      {
+        "name": "password",
+        "placeholder": "Senha",
+        "rect": {
+          "x": 27,
+          "y": 436,
+          "width": 360,
+          "height": 52,
+          "top": 436,
+          "right": 387,
+          "bottom": 488,
+          "left": 27
+        }
+      },
+      {
+        "name": "confirmPassword",
+        "placeholder": "Confirmar senha",
+        "rect": {
+          "x": 27,
+          "y": 498,
+          "width": 360,
+          "height": 52,
+          "top": 498,
+          "right": 387,
+          "bottom": 550,
+          "left": 27
+        }
+      }
+    ]
+  },
+  {
+    "width": 414,
+    "route": "/profile",
+    "errors": [],
+    "size": {
+      "width": 414,
+      "content": 414
+    }
+  },
+  {
+    "width": 414,
+    "route": "/wallets",
+    "errors": [],
+    "size": {
+      "width": 414,
+      "content": 414
+    }
+  },
+  {
+    "width": 414,
+    "route": "/",
+    "errors": [],
+    "size": {
+      "width": 414,
+      "content": 414
+    }
+  },
+  {
+    "width": 414,
+    "route": "/cart",
+    "errors": [],
+    "size": {
+      "width": 414,
+      "content": 414
+    }
+  },
+  {
+    "width": 414,
+    "route": "/checkout",
+    "errors": [],
+    "size": {
+      "width": 414,
+      "content": 414
+    }
+  },
+  {
+    "width": 414,
+    "route": "/orders/:id",
+    "errors": [],
+    "size": {
+      "width": 414,
+      "content": 414
+    }
+  }
+]

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#140d0a" />
+    <meta name="description" content="Explore coleções digitais na Kurio. Demonstração frontend com API e atualizações em tempo real simuladas." />
+    <title>Kurio — Explore NFTs</title>
+    <script>
+      // A arte desta rota é conhecida: descubra o recurso antes do bootstrap/API.
+      if (location.pathname === '/nfts/nft-01') {
+        const art = document.createElement('link');
+        art.rel = 'preload';
+        art.as = 'image';
+        art.href = matchMedia('(max-width: 640px)').matches
+          ? '/assets/figma/mobile-hero.png'
+          : '/assets/figma/detail-main.png';
+        art.fetchPriority = 'high';
+        document.head.append(art);
+      }
+      if (location.pathname === '/') {
+        const art = document.createElement('link');
+        art.rel = 'preload';
+        art.as = 'image';
+        art.href = matchMedia('(max-width: 640px)').matches
+          ? '/assets/figma/mh-imgMaskGroup.svg'
+          : '/assets/figma/hero.png';
+        art.fetchPriority = 'high';
+        document.head.append(art);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,464 @@
+{
+  "config": {
+    "configFile": "/workspace/scratch/c24001a1e050/nft-marketplace/playwright.local.config.ts",
+    "rootDir": "/workspace/scratch/c24001a1e050/nft-marketplace/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/pdf-visual-update.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/workspace/scratch/c24001a1e050/nft-marketplace/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "/workspace/scratch/c24001a1e050/nft-marketplace/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/workspace/scratch/c24001a1e050/nft-marketplace/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile",
+        "name": "mobile",
+        "testDir": "/workspace/scratch/c24001a1e050/nft-marketplace/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "changed",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run build && npm run preview -- --port 5173",
+      "url": "http://127.0.0.1:5173",
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "visual.spec.ts",
+      "file": "visual.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "catálogo — referência de regressão",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8881,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "/workspace/scratch/c24001a1e050/nft-marketplace/tests/visual.spec.ts-snapshots/catalog-desktop-linux.png is re-generated, writing actual.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T21:50:20.820Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-d7550346ab08c4b92c16",
+          "file": "visual.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "detalhe — referência de regressão",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7030,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "/workspace/scratch/c24001a1e050/nft-marketplace/tests/visual.spec.ts-snapshots/detail-desktop-linux.png is re-generated, writing actual.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T21:50:29.805Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-949c15e478db45f3ffa4",
+          "file": "visual.spec.ts",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "carrinho — referência de regressão",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4261,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "/workspace/scratch/c24001a1e050/nft-marketplace/tests/visual.spec.ts-snapshots/cart-desktop-linux.png is re-generated, writing actual.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T21:50:36.862Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-5565fbcda1d07a769d46",
+          "file": "visual.spec.ts",
+          "line": 42,
+          "column": 1
+        },
+        {
+          "title": "pagamento — referência de regressão",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6419,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "/workspace/scratch/c24001a1e050/nft-marketplace/tests/visual.spec.ts-snapshots/payment-desktop-linux.png is re-generated, writing actual.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T21:50:41.145Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-7689b1b66770d22a564f",
+          "file": "visual.spec.ts",
+          "line": 58,
+          "column": 1
+        },
+        {
+          "title": "catálogo — referência de regressão",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2397,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "/workspace/scratch/c24001a1e050/nft-marketplace/tests/visual.spec.ts-snapshots/catalog-mobile-linux.png is re-generated, writing actual.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T21:50:48.539Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-4828fdb21717273185a5",
+          "file": "visual.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "detalhe — referência de regressão",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2414,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "/workspace/scratch/c24001a1e050/nft-marketplace/tests/visual.spec.ts-snapshots/detail-mobile-linux.png is re-generated, writing actual.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T21:50:51.014Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-1205336c7d69330b3cc4",
+          "file": "visual.spec.ts",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "carrinho — referência de regressão",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30387,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/scratch/c24001a1e050/nft-marketplace/tests/helpers.ts",
+                        "column": 70,
+                        "line": 16
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'COMPRAR', exact: true })\u001b[22m\n\n\n   at helpers.ts:16\n\n  14 |   } else {\n  15 |     const detail = page.url()\n> 16 |     await page.getByRole('button', { name: 'COMPRAR', exact: true }).click()\n     |                                                                      ^\n  17 |     await expect(page).toHaveURL((url) => url.pathname === '/cart')\n  18 |     await expect(page.getByTestId('cart-item')).not.toHaveCount(0)\n  19 |     await page.goBack()\n    at addFromDetail (/workspace/scratch/c24001a1e050/nft-marketplace/tests/helpers.ts:16:70)\n    at cart (/workspace/scratch/c24001a1e050/nft-marketplace/tests/visual.spec.ts:23:3)\n    at /workspace/scratch/c24001a1e050/nft-marketplace/tests/visual.spec.ts:54:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T21:50:53.446Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/scratch/c24001a1e050/nft-marketplace/test-results/visual-carrinho-—-referência-de-regressão-mobile/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/c24001a1e050/nft-marketplace/test-results/visual-carrinho-—-referência-de-regressão-mobile/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/scratch/c24001a1e050/nft-marketplace/test-results/visual-carrinho-—-referência-de-regressão-mobile/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-e91d37f99f222eb1077e",
+          "file": "visual.spec.ts",
+          "line": 42,
+          "column": 1
+        },
+        {
+          "title": "pagamento — referência de regressão",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30247,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/scratch/c24001a1e050/nft-marketplace/tests/helpers.ts",
+                        "column": 70,
+                        "line": 16
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'COMPRAR', exact: true })\u001b[22m\n\n\n   at helpers.ts:16\n\n  14 |   } else {\n  15 |     const detail = page.url()\n> 16 |     await page.getByRole('button', { name: 'COMPRAR', exact: true }).click()\n     |                                                                      ^\n  17 |     await expect(page).toHaveURL((url) => url.pathname === '/cart')\n  18 |     await expect(page.getByTestId('cart-item')).not.toHaveCount(0)\n  19 |     await page.goBack()\n    at addFromDetail (/workspace/scratch/c24001a1e050/nft-marketplace/tests/helpers.ts:16:70)\n    at cart (/workspace/scratch/c24001a1e050/nft-marketplace/tests/visual.spec.ts:23:3)\n    at /workspace/scratch/c24001a1e050/nft-marketplace/tests/visual.spec.ts:66:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T21:51:26.587Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/scratch/c24001a1e050/nft-marketplace/test-results/visual-pagamento-—-referência-de-regressão-mobile/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/scratch/c24001a1e050/nft-marketplace/test-results/visual-pagamento-—-referência-de-regressão-mobile/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/scratch/c24001a1e050/nft-marketplace/test-results/visual-pagamento-—-referência-de-regressão-mobile/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8324bb52c49185e48ff4-4d1e2ca0ac853a6cded5",
+          "file": "visual.spec.ts",
+          "line": 58,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-14T21:49:54.167Z",
+    "duration": 123007.45999999999,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

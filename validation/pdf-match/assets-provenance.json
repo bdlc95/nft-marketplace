@@ -1,0 +1,217 @@
+{
+  "source": "Frontend Challenge (cópia).pdf",
+  "sourceSha256": "33cd22eeb5bf2f1544298e4d1f6166d13bbf7e1b644e5c1df95adb4ea241b66a",
+  "method": "PyMuPDF rasterization at 3x; PDF points equal design pixels for this export",
+  "assets": [
+    {
+      "file": "public/assets/pdf/google-desktop.png",
+      "page": 6,
+      "clip": [
+        625.5,
+        575,
+        645.5,
+        595
+      ]
+    },
+    {
+      "file": "public/assets/pdf/facebook-desktop.png",
+      "page": 6,
+      "clip": [
+        623.2,
+        627,
+        633.2,
+        647
+      ]
+    },
+    {
+      "file": "public/assets/pdf/google-mobile.png",
+      "page": 14,
+      "clip": [
+        103.5,
+        630,
+        123.5,
+        650
+      ]
+    },
+    {
+      "file": "public/assets/pdf/facebook-mobile.png",
+      "page": 14,
+      "clip": [
+        101.2,
+        686,
+        111.2,
+        706
+      ]
+    },
+    {
+      "file": "public/assets/pdf/eye-desktop.png",
+      "page": 6,
+      "clip": [
+        857,
+        388,
+        877,
+        405
+      ]
+    },
+    {
+      "file": "public/assets/pdf/eye-mobile.png",
+      "page": 14,
+      "clip": [
+        352,
+        392,
+        369,
+        406
+      ]
+    },
+    {
+      "file": "public/assets/pdf/eye-profile.png",
+      "page": 8,
+      "clip": [
+        838,
+        544,
+        858,
+        563
+      ]
+    },
+    {
+      "file": "public/assets/pdf/avatar.png",
+      "page": 8,
+      "clip": [
+        903,
+        380,
+        953,
+        430
+      ]
+    },
+    {
+      "file": "public/assets/pdf/thank-you.png",
+      "page": 5,
+      "clip": [
+        686,
+        187,
+        754,
+        269
+      ]
+    },
+    {
+      "file": "public/assets/pdf/trash.png",
+      "page": 3,
+      "clip": [
+        855,
+        193,
+        879,
+        217
+      ]
+    },
+    {
+      "file": "public/assets/pdf/provider-walletconnect.png",
+      "page": 13,
+      "clip": [
+        42,
+        391,
+        82,
+        431
+      ]
+    },
+    {
+      "file": "public/assets/pdf/provider-metamask.png",
+      "page": 13,
+      "clip": [
+        42,
+        472,
+        82,
+        512
+      ]
+    },
+    {
+      "file": "public/assets/pdf/provider-coinbase.png",
+      "page": 13,
+      "clip": [
+        42,
+        553,
+        82,
+        593
+      ]
+    },
+    {
+      "file": "public/assets/pdf/account-0.png",
+      "page": 8,
+      "clip": [
+        135,
+        157,
+        155,
+        177
+      ]
+    },
+    {
+      "file": "public/assets/pdf/account-1.png",
+      "page": 8,
+      "clip": [
+        135,
+        202,
+        155,
+        222
+      ]
+    },
+    {
+      "file": "public/assets/pdf/account-2.png",
+      "page": 8,
+      "clip": [
+        135,
+        247,
+        155,
+        267
+      ]
+    },
+    {
+      "file": "public/assets/pdf/account-3.png",
+      "page": 8,
+      "clip": [
+        135,
+        292,
+        155,
+        312
+      ]
+    },
+    {
+      "file": "public/assets/pdf/account-4.png",
+      "page": 8,
+      "clip": [
+        135,
+        337,
+        155,
+        357
+      ]
+    },
+    {
+      "file": "public/assets/pdf/account-5.png",
+      "page": 8,
+      "clip": [
+        135,
+        382,
+        155,
+        402
+      ]
+    },
+    {
+      "file": "public/assets/pdf/account-6.png",
+      "page": 8,
+      "clip": [
+        135,
+        427,
+        155,
+        447
+      ]
+    },
+    {
+      "file": "public/assets/pdf/account-7.png",
+      "page": 8,
+      "clip": [
+        135,
+        470,
+        155,
+        490
+      ]
+    }
+  ]
+}
